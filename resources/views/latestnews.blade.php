@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description"
-            content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
 
         <!-- title -->
         <title>Single News</title>
@@ -39,15 +39,6 @@
     </head>
 
     <body>
-
-        <!--PreLoader-->
-        <div class="loader">
-            <div class="loader-inner">
-                <div class="circle"></div>
-            </div>
-        </div>
-        <!--PreLoader Ends-->
-
         <!-- search area -->
         <div class="search-area">
             <div class="container">

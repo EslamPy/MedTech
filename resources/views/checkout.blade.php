@@ -9,7 +9,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description"
-            content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
         <!-- title -->
         <title>Check Out</title>
@@ -39,17 +38,6 @@
     </head>
 
     <body>
-
-        <!--PreLoader-->
-        <div class="loader">
-            <div class="loader-inner">
-                <div class="circle"></div>
-            </div>
-        </div>
-        <!--PreLoader Ends-->
-
-
-
         <!-- search area -->
         <div class="search-area">
             <div class="container">
@@ -75,7 +63,7 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="breadcrumb-text">
-                            <p>Fresh and Organic</p>
+                            <p>TECHNICAL AND EFFICIENT</p>
                             <h1>Check Out Product</h1>
                         </div>
                     </div>

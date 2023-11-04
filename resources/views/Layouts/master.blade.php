@@ -1,6 +1,16 @@
 @yield('static')
 
 <!-- header -->
+
+<!--PreLoader-->
+<div class="loader">
+    <div class="loader-inner">
+        <div class="circle"></div>
+    </div>
+</div>
+<!--PreLoader Ends-->
+
+
 <div class="top-header-area" id="sticker">
     <div class="container">
         <div class="row">
@@ -34,6 +44,8 @@
                 </div>
             </div>
         </div>
+
+
         <!-- Button Container -->
         <div class="button-container">
             <a href="{{ route('login') }}">
@@ -45,9 +57,6 @@
     </div>
 </div>
 <!-- header end -->
-
-
-
 
 
 <!-- logo carousel -->
@@ -117,12 +126,10 @@
                 <div class="col-xl-4 col-lg-4 mb-50">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            <a href="index.html"><img src="{{ asset('assets\img\logo.png') }}" class="img-fluid" alt="logo"></a>
                         </div>
                         <div class="footer-text">
-                            <p>At Our PC Online, we're not just a PC store; we're your tech partner. With a passion for
-                            innovation and unwavering commitment to quality, we offer the latest in PC components and
-                            hardware.</p>
+                            <p>At Our PC Online, we're your tech partner, offering the latest in PC components and hardware with a focus on innovation and quality.</p>
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>

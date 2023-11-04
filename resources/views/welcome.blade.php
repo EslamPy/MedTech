@@ -40,31 +40,6 @@
 
 
     <body>
-
-        <!--PreLoader-->
-        <div class="loader">
-            <div class="loader-inner">
-                <div class="circle"></div>
-            </div>
-        </div>
-        <!--PreLoader Ends-->
-
-        {{-- <section class="splash">
-            <h1>The web is <span>complicated</span>.</h1>
-            <div class="splash__bg">
-              <span class="js-circle"></span>
-              <span class="js-circle"></span>
-              <span class="js-circle"></span>
-              <span class="js-circle"></span>
-              <span class="js-circle"></span>
-              <span class="js-circle"></span>
-              <span class="js-circle"></span>
-              <span class="js-circle"></span>
-            </div>
-          </section> --}}
-
-
-
         <!-- search area -->
         <div class="search-area">
             <div class="container">
@@ -271,65 +246,6 @@
         </section>
         <!-- end cart banner section -->
 
-        <!-- testimonail-section -->
-        <div class="testimonail-section mt-150 mb-150">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1 text-center">
-                        <div class="testimonial-sliders">
-                            <div class="single-testimonial-slider">
-                                <div class="client-avater">
-                                    <img src="assets/img/avaters/avatar1.png" alt="">
-                                </div>
-                                <div class="client-meta">
-                                    <h3>Saira Hakim <span>Local shop owner</span></h3>
-                                    <p class="testimonial-body">
-                                        "Amazing! Our PC Online is my go-to for gaming gear. Their selection is impressive,
-                                        and they offer top-notch customer service. They helped me build my dream gaming rig
-                                        within budget."
-                                    </p>
-                                    <div class="last-icon">
-                                        <i class="fas fa-quote-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-slider">
-                                <div class="client-avater">
-                                    <img src="assets/img/avaters/avatar2.jpg" alt="">
-                                </div>
-                                <div class="client-meta">
-                                    <h3>David Niph <span>Local shop owner</span></h3>
-                                    <p class="testimonial-body">
-                                        "The best place for PC parts! Our PC Online's expertise and selection exceeded my
-                                        expectations. They're my first choice for quality components."
-                                    </p>
-                                    <div class="last-icon">
-                                        <i class="fas fa-quote-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-testimonial-slider">
-                                <div class="client-avater">
-                                    <img src="assets/img/avaters/avatar3.jpg" alt="">
-                                </div>
-                                <div class="client-meta">
-                                    <h3>Jacob Sikim <span>Local shop owner</span></h3>
-                                    <p class="testimonial-body">
-                                        "Game-changer for content creators! Our PC Online offers a wide range of quality
-                                        components at competitive prices. I upgraded my setup and couldn't be happier.
-                                        Highly recommended!"
-                                    </p>
-                                    <div class="last-icon">
-                                        <i class="fas fa-quote-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <!-- shop banner -->
         <section class="shop-banner">
@@ -424,4 +340,70 @@
             </div>
         </div>
         <!-- end latest news -->
-    @endsection
+
+
+                <!-- testimonail-section -->
+
+                <div class="section-title">
+                            <h3><span class="orange-text">Our</span> Reviews</h3>
+                            <p>"Discover what our customers have to say about our top-quality components and products. Explore our latest reviews now!"</p>
+                        </div>
+
+                <div class="testimonail-section mt-150 mb-150">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1 text-center">
+                                <div class="testimonial-sliders">
+                                    <div class="single-testimonial-slider">
+                                        <div class="client-avater">
+                                            <img src="assets/img/avaters/avatar1.png" alt="">
+                                        </div>
+                                        <div class="client-meta">
+                                            <h3>Saira Hakim <span>Local shop owner</span></h3>
+                                            <p class="testimonial-body">
+                                                "Amazing! Our PC Online is my go-to for gaming gear. Their selection is impressive,
+                                                and they offer top-notch customer service. They helped me build my dream gaming rig
+                                                within budget."
+                                            </p>
+                                            <div class="last-icon">
+                                                <i class="fas fa-quote-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial-slider">
+                                        <div class="client-avater">
+                                            <img src="assets/img/avaters/avatar2.jpg" alt="">
+                                        </div>
+                                        <div class="client-meta">
+                                            <h3>David Niph <span>Local shop owner</span></h3>
+                                            <p class="testimonial-body">
+                                                "The best place for PC parts! Our PC Online's expertise and selection exceeded my
+                                                expectations. They're my first choice for quality components."
+                                            </p>
+                                            <div class="last-icon">
+                                                <i class="fas fa-quote-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial-slider">
+                                        <div class="client-avater">
+                                            <img src="assets/img/avaters/avatar3.jpg" alt="">
+                                        </div>
+                                        <div class="client-meta">
+                                            <h3>Jacob Sikim <span>Local shop owner</span></h3>
+                                            <p class="testimonial-body">
+                                                "Game-changer for content creators! Our PC Online offers a wide range of quality
+                                                components at competitive prices. I upgraded my setup and couldn't be happier.
+                                                Highly recommended!"
+                                            </p>
+                                            <div class="last-icon">
+                                                <i class="fas fa-quote-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+@endsection

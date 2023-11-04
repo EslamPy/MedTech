@@ -53,27 +53,24 @@
         });
 
         // logo carousel
-        $(".logo-carousel-inner").owlCarousel({
+        $('.logo-carousel-inner').owlCarousel({
             items: 4,
             loop: true,
+            margin: 20,
             autoplay: true,
-            margin: 30,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:false
-                },
-                600:{
-                    items:3,
-                    nav:false
-                },
-                1000:{
-                    items:4,
-                    nav:false,
-                    loop:true
-                }
+            autoplayTimeout: 3000,
+            responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+              },
+              992: {
+                items: 4
+              }
             }
-        });
+          });
 
 // Function to get the dynamic countdown date from an API or other source
 function getDynamicCountdownDate() {
