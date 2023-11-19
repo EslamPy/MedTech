@@ -55,69 +55,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/css/util.css') }}">
 
-    {{-- <script nonce="29659fae-4f95-4fdb-a437-99be16249bcb">
-        (function (w, d) {
-            ! function (bb, bc, bd, be) {
-                bb[bd] = bb[bd] || {};
-                bb[bd].executed = [];
-                bb.zaraz = {
-                    deferred: [],
-                    listeners: []
-                };
-                bb.zaraz.q = [];
-                bb.zaraz._f = function (bf) {
-                    return async function () {
-                        var bg = Array.prototype.slice.call(arguments);
-                        bb.zaraz.q.push({
-                            m: bf,
-                            a: bg
-                        })
-                    }
-                };
-                for (const bh of ["track", "set", "debug"]) bb.zaraz[bh] = bb.zaraz._f(bh);
-                bb.zaraz.init = () => {
-                    var bi = bc.getElementsByTagName(be)[0],
-                        bj = bc.createElement(be),
-                        bk = bc.getElementsByTagName("title")[0];
-                    bk && (bb[bd].t = bc.getElementsByTagName("title")[0].text);
-                    bb[bd].x = Math.random();
-                    bb[bd].w = bb.screen.width;
-                    bb[bd].h = bb.screen.height;
-                    bb[bd].j = bb.innerHeight;
-                    bb[bd].e = bb.innerWidth;
-                    bb[bd].l = bb.location.href;
-                    bb[bd].r = bc.referrer;
-                    bb[bd].k = bb.screen.colorDepth;
-                    bb[bd].n = bc.characterSet;
-                    bb[bd].o = (new Date).getTimezoneOffset();
-                    if (bb.dataLayer)
-                        for (const bo of Object.entries(Object.entries(dataLayer).reduce(((bp, bq) => ({
-                            ...bp[1],
-                            ...bq[1]
-                        })), {}))) zaraz.set(bo[0], bo[1], {
-                            scope: "page"
-                        });
-                    bb[bd].q = [];
-                    for (; bb.zaraz.q.length;) {
-                        const br = bb.zaraz.q.shift();
-                        bb[bd].q.push(br)
-                    }
-                    bj.defer = !0;
-                    for (const bs of [localStorage, sessionStorage]) Object.keys(bs || {}).filter((bu => bu.startsWith("_zaraz_"))).forEach((bt => {
-                        try {
-                            bb[bd]["z_" + bt.slice(7)] = JSON.parse(bs.getItem(bt))
-                        } catch {
-                            bb[bd]["z_" + bt.slice(7)] = bs.getItem(bt)
-                        }
-                    }));
-                    bj.referrerPolicy = "origin";
-                    bj.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bb[bd])));
-                    bi.parentNode.insertBefore(bj, bi)
-                };
-                ["complete", "interactive"].includes(bc.readyState) ? zaraz.init() : bb.addEventListener("DOMContentLoaded", zaraz.init)
-            }(w, d, "zarazData", "script");
-        })(window, document);
-    </script> --}}
 
 </head>
 <!--PreLoader-->
@@ -443,43 +380,6 @@
             <!-- this is the best position for the slider -->
 <script type="text/javascript" src="{{ asset('assets/Products/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/Products/vendor/animsition/js/animsition.min.js') }}"></script> 
-
-
-    
-{{-- <script type="text/javascript" src="{{ asset('assets/Products/vendor/select2/select2.min.js') }}"></script> 
-<script type="text/javascript">
-    $(".selection-1").select2({
-        minimumResultsForSearch: 20,
-        dropdownParent: $('#dropDownSelect1')
-    });
-    
-    $(".selection-2").select2({
-        minimumResultsForSearch: 20,
-        dropdownParent: $('#dropDownSelect2')
-    });
-    </script> --}}
-
-<!-- Important Js links -->
-{{-- <script type="text/javascript" src="{{ asset('assets/Products/vendor/slick/slick.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/Products/js/slick-custom.js') }}"></script>
-
-                <!-- This is a add to Cart button animation -->
-<script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
-<script type="text/javascript">
-    $('.block2-btn-addcart').each(function () {
-        var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-        $(this).on('click', function () {
-            swal(nameProduct, "is added to cart !", "success");
-        });
-    });
-
-    $('.block2-btn-addwishlist').each(function () {
-        var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-        $(this).on('click', function () {
-            swal(nameProduct, "is added to wishlist !", "success");
-        });
-    });
-    </script> --}}
     
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
@@ -505,11 +405,6 @@
 
 <script src="{{ asset('assets/Products/js/main.js') }} "></script> 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8239d14a7c060daf","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
-
-    {{-- <script src="{{ asset('assets/Products/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('assets/Products/vendor/modernizr-3.5.0.min.js') }}"></script>
-    <script src="{{ asset('assets/Products/js/main1.js') }}"></script> 
-    <script src="{{ asset('assets/Products/js/slick.min.js') }}"></script> --}}
 
 </body>
 
