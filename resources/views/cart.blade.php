@@ -95,7 +95,7 @@
                                         </td>
                                         <td class="product-image"><img src="assets/img/products/product-img-1.jpg"
                                                 alt=""></td>
-                                        <td class="product-name">Strawberry</td>
+                                        <td class="product-name">CPU</td>
                                         <td class="product-price">$85</td>
                                         <td class="product-quantity"><input type="number" placeholder="0"></td>
                                         <td class="product-total">1</td>
@@ -105,7 +105,7 @@
                                         </td>
                                         <td class="product-image"><img src="assets/img/products/product-img-2.jpg"
                                                 alt=""></td>
-                                        <td class="product-name">Berry</td>
+                                        <td class="product-name">GPU</td>
                                         <td class="product-price">$70</td>
                                         <td class="product-quantity"><input type="number" placeholder="0"></td>
                                         <td class="product-total">1</td>
@@ -115,7 +115,7 @@
                                         </td>
                                         <td class="product-image"><img src="assets/img/products/product-img-3.jpg"
                                                 alt=""></td>
-                                        <td class="product-name">Lemon</td>
+                                        <td class="product-name">Ram</td>
                                         <td class="product-price">$35</td>
                                         <td class="product-quantity"><input type="number" placeholder="0"></td>
                                         <td class="product-total">1</td>
