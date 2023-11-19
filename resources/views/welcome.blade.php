@@ -37,7 +37,6 @@
         <!-- responsive -->
         <link rel="stylesheet" href="assets/css/responsive.css">
         <!-- Products css-->
-        {{-- <link rel="stylesheet" href="{{ asset('assets/Products/vendor/bootstrap/css/bootstrap.min.css') }}" /> --}}
         <link rel="stylesheet" href="{{ asset('assets/Products/vendor/animate/animate.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/Products/vendor/slick/slick.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/Products/css/main.css') }}" />
@@ -179,29 +178,26 @@
         </div>
         <!-- end features list section -->
 
-        <div class="animsition">
-            <section class="banner bgwhite p-t-40 p-b-40">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2 text-center">
-                            <div class="section-title">
-                                <h3><span class="orange-text">Our</span> Products</h3>
-                                <p>"Upgrade your PC with top-quality components. Explore our range of PC parts now!"</p>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="section-title">
+                        <h3><span class="orange-text">Our</span> Products</h3>
+                        <p>"Upgrade your PC with top-quality components. Explore our range of PC parts now!"</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+        </section>
         </div>
 
-
-
-        <!-- product section -->
-        <section div class="container" style="margin-top: -77px; max-width: 1212px;">
+        <!-- Product Section -->
+        <section div class="container" style="margin-top: -18px; max-width: 1212px;">
             <div class="row">
                 <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
-                        <img src="{{ asset('assets/img/Project-images/Ram.jpg') }}" alt="IMG-BENNER" style="width: 100%;max-width: 100%;height: auto;margin-left: 5px;">
+                        <img src="{{ asset('assets/img/Project-images/Ram.jpg') }}" alt="IMG-BENNER"
+                            style="width: 100%;max-width: 100%;height: auto;margin-left: 5px;">
                         <div class="block1-wrapbtn w-size2">
                             <a href="{{ route('shop') }}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
                                 Ram
@@ -209,7 +205,7 @@
                         </div>
                     </div>
 
-                     <div class="block1 hov-img-zoom pos-relative m-b-30">
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
                         <img src="{{ asset('assets/img/Project-images/Motherboard.png') }}" alt="IMG-BENNER"
                             style="width: 100%;max-width: 100%;height: auto;margin-left: 2px;">
                         <div class="block1-wrapbtn w-size2">
@@ -233,10 +229,10 @@
 
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
                         <img src="{{ asset('assets/img/Project-images/Powersupply.png') }}" alt="IMG-BENNER"
-                            style="width: 100%;max-width: 100%;height: auto;margin-left: -9px;">
+                            style="width: 100%;max-width: 100%;height: auto;margin-left: -9px; margin-top: 51px;">
                         <div class="block1-wrapbtn w-size2">
                             <a href="{{ route('shop') }}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                Powersupply
+                                Power Supply
                             </a>
                         </div>
                     </div>
@@ -254,7 +250,7 @@
                     </div>
 
                     <div class="block2 wrap-pic-w pos-relative m-b-30">
-                        <img src="{{ asset('assets/Products/images/icons/bg-01.jpg') }}" alt="IMG"
+                        <img src="{{ asset('assets/img/bg-01.jpg') }}" alt="IMG"
                             style="width: 100%;max-width: 100%;height: auto;margin-left: -1px;">
                         <div class="block2-content sizefull ab-t-l flex-col-c-m">
                             <h4 class="m-text4 t-center w-size3 p-b-8">
@@ -274,7 +270,7 @@
             </div>
             </div>
         </section>
-        <!-- end product section -->
+        <!-- End Product Section -->
 
         <!-- Feautre PRODUCTS -->
         <section class="latest-items section-padding fix">

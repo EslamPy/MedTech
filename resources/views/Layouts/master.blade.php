@@ -34,14 +34,6 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    {{-- <!-- Products css-->
-    <link rel="stylesheet" href="{{ asset('assets/Products/vendor/bootstrap/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/Products/vendor/animate/animate.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/Products/vendor/slick/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/Products/css/main.css') }}" /> 
-    <link rel="stylesheet" href="{{ asset('assets/Products/css/util.css') }}" />
-    <!-- Footer css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-..." crossorigin="anonymous"> --}}
     
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/vendor/bootstrap/css/bootstrap.min.css') }}">
@@ -49,9 +41,7 @@
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Animation Section -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/vendor/animsition/css/animsition.min.css') }}">
-    <!-- this is the  reason  why the section doesn't shows you must add this link -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/vendor/slick/slick.css') }}">
-
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/css/util.css') }}">
 
@@ -375,9 +365,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-{{-- <div id="dropDownSelect1"></div> --}}
 <div id="dropDownSelect2"></div>
-            <!-- this is the best position for the slider -->
+            <!-- slider -->
 <script type="text/javascript" src="{{ asset('assets/Products/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/Products/vendor/animsition/js/animsition.min.js') }}"></script> 
     
@@ -400,9 +389,6 @@
         });
     });
 </script>
-
-
-
 <script src="{{ asset('assets/Products/js/main.js') }} "></script> 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8239d14a7c060daf","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
 

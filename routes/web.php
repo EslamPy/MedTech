@@ -26,11 +26,6 @@ Route::get('/', function () {
     ]);
 })->name('welcome');
 
-// $result = DB::table('category')->where('name' , 'Lemons')->get();
-// 
-// dd($result);
-// return view('welcome' ,['category' => $result]);
-
 
 
 
