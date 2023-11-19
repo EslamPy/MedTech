@@ -16,10 +16,16 @@ use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
 
-    $result = DB::table('_category')->get();
+    $item = DB::table('_category')->get();
+    
+    $our_products = DB::table('our_products')->get();
 
-    return view('welcome' ,['_category' => $result]);
+    return view('welcome', [
+        '_category' => $item,
+        'our_products' => $our_products,
+    ]);
 })->name('welcome');
+
 // $result = DB::table('category')->where('name' , 'Lemons')->get();
 // 
 // dd($result);
@@ -37,9 +43,10 @@ Route::get('/shop', function () {
 
 
 Route::get('/Products', function () {
-    return view('Products');
-})->name('Products');
+    $item = DB::table('_category')->get();
 
+    return view('Products', ['_category' => $item]);
+})->name('Products');
 
 Route::get('/news', function () {
     return view('news');

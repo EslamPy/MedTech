@@ -20,20 +20,34 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
         <!-- fontawesome -->
         <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oCE8e1v6qAqzYT9py4uKti9bAJ2IYoaBdMuXuXtv3AvHOHMQeC6d6gezg67uC3P1" crossorigin="anonymous">
         <!-- bootstrap -->
-        <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <!-- owl carousel -->
-        <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.css') }}">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
         <!-- magnific popup -->
-        <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <!-- animate css -->
-        <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+        <link rel="stylesheet" href="assets/css/animate.css">
         <!-- mean menu css -->
-        <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.min.css') }}">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
         <!-- main style -->
-        <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+        <link rel="stylesheet" href="assets/css/main.css">
         <!-- responsive -->
-        <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Products css-->
+        {{-- <link rel="stylesheet" href="{{ asset('assets/Products/vendor/bootstrap/css/bootstrap.min.css') }}" /> --}}
+        <link rel="stylesheet" href="{{ asset('assets/Products/vendor/animate/animate.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/Products/vendor/slick/slick.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/Products/css/main.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/Products/css/util.css') }}" />
+
+        <link rel="stylesheet" href="{{ asset('assets/Products/css/slick.css') }}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+        <link rel="stylesheet" href="{{ asset('assets/Products/css/nice-select.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/Products/css/style.css') }}">
+        <!-- Products css-->
 
     </head>
 
@@ -155,7 +169,7 @@
                             </div>
                             <div class="content">
                                 <h3>Refund</h3>
-                                <p>Get refund within 3 days!</p>
+                                <p>Get refund within 3 days !</p>
                             </div>
                         </div>
                     </div>
@@ -165,38 +179,338 @@
         </div>
         <!-- end features list section -->
 
+        <div class="animsition">
+            <section class="banner bgwhite p-t-40 p-b-40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 text-center">
+                            <div class="section-title">
+                                <h3><span class="orange-text">Our</span> Products</h3>
+                                <p>"Upgrade your PC with top-quality components. Explore our range of PC parts now!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
         <!-- product section -->
-        <div class="product-section mt-150 mb-150">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2 text-center">
-                        <div class="section-title">
-                            <h3><span class="orange-text">Our</span> Products</h3>
-                            <p>"Upgrade your PC with top-quality components. Explore our range of PC parts now!"</p>
+        <section div class="container" style="margin-top: -77px; max-width: 1212px;">
+            <div class="row">
+                <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="{{ asset('assets/img/Project-images/Ram.jpg') }}" alt="IMG-BENNER" style="width: 100%;max-width: 100%;height: auto;margin-left: 5px;">
+                        <div class="block1-wrapbtn w-size2">
+                            <a href="{{ route('shop') }}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                Ram
+                            </a>
+                        </div>
+                    </div>
+
+                     <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="{{ asset('assets/img/Project-images/Motherboard.png') }}" alt="IMG-BENNER"
+                            style="width: 100%;max-width: 100%;height: auto;margin-left: 2px;">
+                        <div class="block1-wrapbtn w-size2">
+                            <a href="{{ route('shop') }}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                Motherboard
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="{{ asset('assets/img/Project-images/GPU.jpg') }}" alt="IMG-BENNER"
+                            style="width: 100%;max-width: 100%;height: auto;margin-left: -3px;">
+                        <div class="block1-wrapbtn w-size2">
+                            <a href="{{ route('shop') }}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                GPU
+                            </a>
+                        </div>
+                    </div>
 
-                    @foreach ($_category as $item)
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="single-product-item">
-                            <div class="product-image">
-                            <a href="{{ route('Products') }}">
-                            <img src="{{ asset($item->imgpath) }}" style="max-height: 250px !important; min-height: 250px !important" alt="">
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="{{ asset('assets/img/Project-images/Powersupply.png') }}" alt="IMG-BENNER"
+                            style="width: 100%;max-width: 100%;height: auto;margin-left: -9px;">
+                        <div class="block1-wrapbtn w-size2">
+                            <a href="{{ route('shop') }}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                Powersupply
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="{{ asset('assets/img/Project-images/CPU.jpg') }}" alt="IMG-BANNER"
+                            style="width: 100%; max-width: 100%; height: auto; margin-left: -1px;">
+                        <div class="block1-wrapbtn w-size2">
+                            <a href="{{ route('shop') }}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                CPU
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="block2 wrap-pic-w pos-relative m-b-30">
+                        <img src="{{ asset('assets/Products/images/icons/bg-01.jpg') }}" alt="IMG"
+                            style="width: 100%;max-width: 100%;height: auto;margin-left: -1px;">
+                        <div class="block2-content sizefull ab-t-l flex-col-c-m">
+                            <h4 class="m-text4 t-center w-size3 p-b-8">
+                                Sign up & get 20% off
+                            </h4>
+                            <p class="t-center w-size4">
+                                Be the first to know about the latest fashion news and get exclusive offers
+                            </p>
+                            <div class="w-size2 p-t-25">
+                                <a href="#" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
+                                    Sign Up
+                                </a>
                             </div>
-                            <h3>{{ $item->name }}</h3>
-                            <p>{{ $item->description }}</p>
-                            <p class="product-price"><span>Price</span> {{ $item->price }} $ </p>
-                            <a href="{{ route('cart') }}" class="cart-btn"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- end product section -->
+
+        <!-- Feautre PRODUCTS -->
+        <section class="latest-items section-padding fix">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-40">
+                        <h2>You May Like</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="latest-items-active" style="width: 150%; margin-left: -264px;">
+    
+                    @foreach ($_category->take(5) as $item)
+                    <div class="properties pb-30">
+                        <div class="properties-card">
+                            <div class="properties-img">
+                                <a href="{{ route('Products') }}"><img src="{{ asset($item->imgpath) }}" alt></a>
+                                <div class="socal_icon">
+                                    <a href="{{ route('cart') }}"><i class="ti-shopping-cart"></i></a>
+                                    <a href=""><i class="ti-heart"></i></a>
+                                    <a href="{{ route('Products') }}"><i class="ti-zoom-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="properties-caption properties-caption2">
+                                <h3><a href="{{ route('Products') }}">{{ $item->name }}</a></h3>
+                                <div class="properties-footer">
+                                    <div class="price">
+                                        <span>${{ $item->price }} <span>${{ $item->regular_price }}</span></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     @endforeach
+                </section>
+        <!-- Feautre PRODUCTS -->
+
+        
+        <!-- OUR PRODUCTS -->
+            <section class="bgwhite p-t-45 p-b-58">
+            <div class="container"style="max-width: 1797px; padding: 30px;">
+                <div class="sec-title p-b-22">
+                    <h3 class="m-text5 t-center">
+                        Featured Products
+                    </h3>
                 </div>
-            </div>
-        </div>
-        <!-- end product section -->
+
+                <div class="tab01">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#best-seller" role="tab">Best
+                                Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#featured" role="tab">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#sale" role="tab">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#top-rate" role="tab">Top Rate</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content p-t-35">
+
+                        <div class="tab-pane fade show active" id="best-seller" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
+
+                                    <div class="block2">
+                                        <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+                                            <img src="{{ asset($item->imgpath) }}" alt="IMG-PRODUCT" style="margin-top: 113px;">
+                                            <div class="block2-overlay trans-0-4">
+                                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="block2-btn-addcart w-size1 trans-0-4">
+
+                                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                        Add to Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block2-txt p-t-20">
+                                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                {{ $item->name }}
+                                            </a>
+                                            <span class="block2-price m-text6 p-r-5">
+                                                ${{ $item->price }}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                @foreach ($_category->take(6) as $item)
+                                <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
+                                    <div class="block2">
+                                        <div class="block2-img wrap-pic-w of-hidden pos-relative">
+                                            <img src="{{ asset($item->imgpath) }}" alt="IMG-PRODUCT" style="margin-top: 113px;">
+                                            <div class="block2-overlay trans-0-4">
+                                                <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                                    <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                                </a>
+                                                
+                                                <div class="block2-btn-addcart w-size1 trans-0-4">
+                                                    <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                        Add to Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block2-txt p-t-20">
+                                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                {{ $item->name }}
+                                            </a>
+                                            <span class="block2-price m-text6 p-r-5">
+                                                ${{ $item->price }}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="featured" role="tabpanel">
+                            <div class="row">
+                                @foreach ($_category->take(5) as $item)
+                                    <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
+                                        <div class="block2">
+                                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+                                                <img src="{{ asset($item->imgpath) }}" alt="IMG-PRODUCT" style="margin-top: 113px;">
+                                                <div class="block2-overlay trans-0-4">
+                                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                                    </a>
+                                                    
+                                                    <div class="block2-btn-addcart w-size1 trans-0-4">
+                                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                            Add to Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="block2-txt p-t-20">
+                                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                    {{ $item->name }}
+                                                </a>
+                                                <span class="block2-oldprice m-text7 p-r-5">
+                                                    $29.50
+                                                </span>
+                                                <span class="block2-newprice m-text8 p-r-5">
+                                                    ${{ $item->price }}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="sale" role="tabpanel">
+                            <div class="row">
+                                @foreach ($_category->take(4) as $item)
+                                    <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
+                                        <div class="block2">
+                                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+                                                <img src="{{ asset($item->imgpath) }}" alt="IMG-PRODUCT" style="margin-top: 113px;">
+                                                <div class="block2-overlay trans-0-4">
+                                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="block2-btn-addcart w-size1 trans-0-4">
+                                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                            Add to Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="block2-txt p-t-20">
+                                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                    {{ $item->name }}
+                                                </a>
+                                                <span class="block2-price m-text6 p-r-5">
+                                                    ${{ $item->price }}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        
+
+                        <div class="tab-pane fade" id="top-rate" role="tabpanel">
+                            <div class="row">
+                                @foreach ($_category->take(6) as $item)
+                                    <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
+                                        <div class="block2">
+                                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+                                                <img src="{{ asset($item->imgpath) }}" alt="IMG-PRODUCT" style="margin-top: 113px;">
+                                                <div class="block2-overlay trans-0-4">
+                                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="block2-btn-addcart w-size1 trans-0-4">
+                                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                            Add to Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="block2-txt p-t-20">
+                                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                    {{ $item->name }}
+                                                </a>
+                                                <span class="block2-price m-text6 p-r-5">
+                                                    ${{ $item->price }}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        
+        </section>
+        <!-- End OUR PRODUCTS -->
+
 
         <!-- cart banner section -->
         <section class="cart-banner pt-100 pb-100">
@@ -208,19 +522,21 @@
                             <div class="price-box">
                                 <div class="inner-price">
                                     <span class="price">
-                                        <strong>30%</strong> <br> off Case
-                                    </span>
+                                        <strong>30%</strong> <br> off Case</span>
                                 </div>
                             </div>
-                            <img src="assets/img/Project-images/Pc Gaming.png" alt="">
+                            <img src="{{ asset('assets/img/Project-images/Pc Gaming.png') }}" alt=""
+                                style="max-width: 80%; margin-left: 83px; margin-top: -61px;">
                         </div>
                     </div>
+
                     <!--Content Column-->
                     <div class="content-column col-lg-6">
                         <h3><span class="orange-text">Deal</span> of the month</h3>
                         <h4>Lian Li O11 Dynamic XL</h4>
                         <div class="text">Discover our 30% Off Deal of the Month on LianLi PC cases! Elevate your setup
                             with style and performance. This limited-time offer won't last, so act fast!"</div>
+
                         <!--Countdown Timer-->
                         <div class="time-counter">
                             <div class="time-countdown clearfix" data-countdown="2020/2/01">
@@ -238,13 +554,14 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="{{ route('cart') }}" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> Add to
+                        <a href="{{ route('cart') }}" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> Add
+                            to
                             Cart</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end cart banner section -->
+        <!--Countdown Timer-->
 
 
         <!-- shop banner -->
@@ -307,7 +624,7 @@
                                 </p>
                                 <p class="excerpt">NVIDIA's RTX 30 series graphics cards, introduced in 2020, continued to
                                     dominate the market. Models like the RTX 3060 Ti and RTX 3080 offered exceptional
-                                    performance and support for ray tracing technology, enhancing the gaming experience.</p>
+                                    performance and support.</p>
                                 <a href="{{ route('news') }}" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -342,68 +659,76 @@
         <!-- end latest news -->
 
 
-                <!-- testimonail-section -->
+        <!-- testimonail-section -->
 
-                <div class="section-title">
-                            <h3><span class="orange-text">Our</span> Reviews</h3>
-                            <p>"Discover what our customers have to say about our top-quality components and products. Explore our latest reviews now!"</p>
-                        </div>
+        <div class="section-title">
+            <h3><span class="orange-text">Our</span> Reviews</h3>
+            <p>"Discover what our customers have to say about our top-quality components and products. Explore our latest
+                reviews now!"</p>
+        </div>
 
-                <div class="testimonail-section mt-150 mb-150">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1 text-center">
-                                <div class="testimonial-sliders">
-                                    <div class="single-testimonial-slider">
-                                        <div class="client-avater">
-                                            <img src="assets/img/avaters/avatar1.png" alt="">
-                                        </div>
-                                        <div class="client-meta">
-                                            <h3>Saira Hakim <span>Local shop owner</span></h3>
-                                            <p class="testimonial-body">
-                                                "Amazing! Our PC Online is my go-to for gaming gear. Their selection is impressive,
-                                                and they offer top-notch customer service. They helped me build my dream gaming rig
-                                                within budget."
-                                            </p>
-                                            <div class="last-icon">
-                                                <i class="fas fa-quote-right"></i>
-                                            </div>
-                                        </div>
+        <div class="testimonail-section mt-150 mb-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <div class="testimonial-sliders">
+                            <div class="single-testimonial-slider">
+                                <div class="client-avater">
+                                    <img src="{{ asset('assets/img/avaters/avatar1.png') }}" alt="">
+                                </div>
+                                <div class="client-meta">
+                                    <h3>Saira Hakim <span>Local shop owner</span></h3>
+                                    <p class="testimonial-body">
+                                        "Amazing! Our PC Online is my go-to for gaming gear. Their selection is impressive,
+                                        and they offer top-notch customer service. They helped me build my dream gaming rig
+                                        within budget."
+                                    </p>
+                                    <div class="last-icon">
+                                        <i class="fas fa-quote-right"></i>
                                     </div>
-                                    <div class="single-testimonial-slider">
-                                        <div class="client-avater">
-                                            <img src="assets/img/avaters/avatar2.jpg" alt="">
-                                        </div>
-                                        <div class="client-meta">
-                                            <h3>David Niph <span>Local shop owner</span></h3>
-                                            <p class="testimonial-body">
-                                                "The best place for PC parts! Our PC Online's expertise and selection exceeded my
-                                                expectations. They're my first choice for quality components."
-                                            </p>
-                                            <div class="last-icon">
-                                                <i class="fas fa-quote-right"></i>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial-slider">
+                                <div class="client-avater">
+                                    <img src="{{ asset('assets/img/avaters/avatar2.jpg') }}" alt="">
+                                </div>
+                                <div class="client-meta">
+                                    <h3>David Niph <span>Local shop owner</span></h3>
+                                    <p class="testimonial-body">
+                                        "The best place for PC parts! Our PC Online's expertise and selection exceeded my
+                                        expectations. They're my first choice for quality components."
+                                    </p>
+                                    <div class="last-icon">
+                                        <i class="fas fa-quote-right"></i>
                                     </div>
-                                    <div class="single-testimonial-slider">
-                                        <div class="client-avater">
-                                            <img src="assets/img/avaters/avatar3.jpg" alt="">
-                                        </div>
-                                        <div class="client-meta">
-                                            <h3>Jacob Sikim <span>Local shop owner</span></h3>
-                                            <p class="testimonial-body">
-                                                "Game-changer for content creators! Our PC Online offers a wide range of quality
-                                                components at competitive prices. I upgraded my setup and couldn't be happier.
-                                                Highly recommended!"
-                                            </p>
-                                            <div class="last-icon">
-                                                <i class="fas fa-quote-right"></i>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial-slider">
+                                <div class="client-avater">
+                                    <img src="{{ asset('assets/img/avaters/avatar3.jpg') }}" alt="">
+                                </div>
+                                <div class="client-meta">
+                                    <h3>Jacob Sikim <span>Local shop owner</span></h3>
+                                    <p class="testimonial-body">
+                                        "Game-changer for content creators! Our PC Online offers a wide range of quality
+                                        components at competitive prices. I upgraded my setup and couldn't be happier.
+                                        Highly recommended!"
+                                    </p>
+                                    <div class="last-icon">
+                                        <i class="fas fa-quote-right"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+
+        <script src="{{ asset('assets/Products/vendor/jquery-1.12.4.min.js') }}"></script>
+        <script src="{{ asset('assets/Products/vendor/modernizr-3.5.0.min.js') }}"></script>
+        <script src="{{ asset('assets/Products/js/slick.min.js') }}"></script>
+        <script src="{{ asset('assets/Products/js/main1.js') }}"></script>
+    </body>
 @endsection
