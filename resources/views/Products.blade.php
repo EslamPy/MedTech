@@ -69,9 +69,7 @@
                         <div class="single-product-content">
                             <h3>Green apples have polyphenols</h3>
                             <p class="single-product-pricing"><span>Per Kg</span> $50</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi
-                                cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi
-                                perferendis eos eum modi! Tempora, earum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.</p>
                             <div class="single-product-form">
                                 <form action="index.html">
                                     <input type="number" placeholder="0">
@@ -100,8 +98,7 @@
                     <div class="col-lg-8 offset-lg-2 text-center">
                         <div class="section-title">
                             <h3><span class="orange-text">Related</span> Products</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
-                                beatae optio.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
                         </div>
                     </div>
                 </div>
@@ -122,13 +119,9 @@
                 </div>
             </div>
         </div>
-                
         <!-- end more products -->
-
-        
-
+    
     </body>
 
     </html>
-
     @endsection

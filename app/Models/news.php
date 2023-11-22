@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class news extends Model
 {
     use HasFactory;
-    protected $fillable = ['id', 'name' , 'title' , 'description' , 'email' , 'created_at' , 'updated_at'];
+    protected $fillable = ['id', 'name' , 'title' , 'description' ,'imgpath' , 'created_at' , 'updated_at'];
     protected $table = 'latest_news';
 }

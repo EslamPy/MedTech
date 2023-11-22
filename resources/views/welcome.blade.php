@@ -351,14 +351,15 @@
                                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
                                                     <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                                 </a>
+                                                
                                                 <div class="block2-btn-addcart w-size1 trans-0-4">
-
                                                     <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
                                                         Add to Cart
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="block2-txt p-t-20">
                                             <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
                                                 {{ $item->name }}
@@ -369,6 +370,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 @foreach ($_category->take(6) as $item)
                                 <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
                                     <div class="block2">
@@ -400,6 +402,7 @@
                                 @endforeach
                             </div>
                         </div>
+
                         <div class="tab-pane fade" id="featured" role="tabpanel">
                             <div class="row">
                                 @foreach ($_category->take(5) as $item)
@@ -470,7 +473,6 @@
                             </div>
                         </div>
                         
-
                         <div class="tab-pane fade" id="top-rate" role="tabpanel">
                             <div class="row">
                                 @foreach ($_category->take(6) as $item)
@@ -503,8 +505,7 @@
                                 @endforeach
                             </div>
                         </div>
-                        
-        </section>
+                    </section>
         <!-- End OUR PRODUCTS -->
 
 
@@ -530,8 +531,8 @@
                     <div class="content-column col-lg-6">
                         <h3><span class="orange-text">Deal</span> of the month</h3>
                         <h4>Lian Li O11 Dynamic XL</h4>
-                        <div class="text">Discover our 30% Off Deal of the Month on LianLi PC cases! Elevate your setup
-                            with style and performance. This limited-time offer won't last, so act fast!"</div>
+                        <div class="text" style="display: block !important;" >Discover our 30% Off Deal of the Month on LianLi PC cases! Elevate your setup
+                        with style and performance. This limited-time offer won't last, so act fast!"</div>
 
                         <!--Countdown Timer-->
                         <div class="time-counter">
@@ -559,7 +560,6 @@
         </section>
         <!--Countdown Timer-->
 
-
         <!-- shop banner -->
         <section class="shop-banner">
             <div class="container">
@@ -570,14 +570,13 @@
         </section>
         <!-- end shop banner -->
 
-
         <!-- latest news -->
         <div class="latest-news pt-150 pb-150">
             <div class="container">
 
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
-                        <div class="section-title">
+                        <div class="section-title" style="margin-top: -110px">
                             <h3><span class="orange-text">Tech</span> Updates</h3>
                             <p>
                                 Stay informed with Our News. Get the latest tech insights and product tips to enhance your
@@ -657,7 +656,7 @@
 
         <!-- testimonail-section -->
 
-        <div class="section-title">
+        <div class="section-title" style="margin-top: -97px">
             <h3><span class="orange-text">Our</span> Reviews</h3>
             <p>"Discover what our customers have to say about our top-quality components and products. Explore our latest
                 reviews now!"</p>

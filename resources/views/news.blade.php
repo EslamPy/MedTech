@@ -87,13 +87,13 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
                                 <a href="{{ route('latest') }}" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
                             <a href="{{ route('latest') }}">
@@ -105,8 +105,7 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
                                 <a href="{{ route('latest') }}" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -123,8 +122,7 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
                                 <a href="{{ route('latest') }}" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -141,8 +139,7 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
                                 <a href="{{ route('latest') }}" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -159,8 +156,7 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
                                 <a href="{{ route('latest') }}" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>
@@ -177,8 +173,7 @@
                                     <span class="author"><i class="fas fa-user"></i> Admin</span>
                                     <span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
                                 </p>
-                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                                    laborum autem, dolores inventore, beatae nam.</p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
                                 <a href="{{ route('latest') }}" class="read-more-btn">read more <i
                                         class="fas fa-angle-right"></i></a>
                             </div>

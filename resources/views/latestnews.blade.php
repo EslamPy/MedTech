@@ -112,10 +112,7 @@
                                         <div class="comment-text-body">
                                             <h4>Jenny Joe <span class="comment-date">Aprl 26, 2020</span> <a
                                                     href="#">reply</a></h4>
-                                            <p>Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna,
-                                                maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros
-                                                porttitor, in interdum ante faucibus Suspendisse lacinia velit a eros
-                                                porttitor, in interdum ante faucibus.</p>
+                                            <p>Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.</p>
                                         </div>
                                         <div class="single-comment-body child">
                                             <div class="comment-user-avater">
@@ -124,9 +121,7 @@
                                             <div class="comment-text-body">
                                                 <h4>Simon Soe <span class="comment-date">Aprl 27, 2020</span> <a
                                                         href="#">reply</a></h4>
-                                                <p>Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem
-                                                    magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia
-                                                    velit a eros porttitor, in interdum ante faucibus.</p>
+                                                <p>Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -137,10 +132,7 @@
                                         <div class="comment-text-body">
                                             <h4>Addy Aoe <span class="comment-date">May 12, 2020</span> <a
                                                     href="#">reply</a></h4>
-                                            <p>Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna,
-                                                maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros
-                                                porttitor, in interdum ante faucibus Suspendisse lacinia velit a eros
-                                                porttitor, in interdum ante faucibus.</p>
+                                            <p>Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.</p>
                                         </div>
                                     </div>
                                 </div>

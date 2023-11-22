@@ -166,7 +166,7 @@
                             <img src="{{ asset('assets/img/logo.png') }}" alt="footer_logo" class="img-fluid">
                         </a>
                         <p class="footer-info-text">
-                            At Our PC Online, we're your tech partner, offering the latest in PC components and hardware
+                            At Med Tech, we're your tech partner, offering the latest in PC components and hardware
                         </p>
                         <div class="footer-social-link">
                             <h3>Follow us</h3>

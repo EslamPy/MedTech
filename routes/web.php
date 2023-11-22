@@ -44,7 +44,9 @@ Route::get('/Products', function () {
 })->name('Products');
 
 Route::get('/news', function () {
-    return view('news');
+    $latest = DB::table('news')->get();
+
+    return view('news', ['news' => $latest]);
 })->name('news');
 
 
