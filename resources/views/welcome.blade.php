@@ -337,12 +337,11 @@
                         </li>
                     </ul>
 
-                    <div class="tab-content p-t-35">
 
+                    <div class="tab-content p-t-35">
                         <div class="tab-pane fade show active" id="best-seller" role="tabpanel">
                             <div class="row">
                                 <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
-
                                     <div class="block2">
                                         <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
                                             <img src="{{ asset($item->imgpath) }}" alt="IMG-PRODUCT" style="margin-top: 113px;">
@@ -361,7 +360,7 @@
                                         </div>
 
                                         <div class="block2-txt p-t-20">
-                                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                            <a href="{{ route('Products') }}" class="block2-name dis-block s-text3 p-b-5">
                                                 {{ $item->name }}
                                             </a>
                                             <span class="block2-price m-text6 p-r-5">
@@ -371,7 +370,7 @@
                                     </div>
                                 </div>
 
-                                @foreach ($_category->take(6) as $item)
+                                @foreach ($_category->take(4) as $item)
                                 <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
                                     <div class="block2">
                                         <div class="block2-img wrap-pic-w of-hidden pos-relative">
@@ -390,7 +389,7 @@
                                             </div>
                                         </div>
                                         <div class="block2-txt p-t-20">
-                                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                            <a href="{{ route('Products') }}" class="block2-name dis-block s-text3 p-b-5">
                                                 {{ $item->name }}
                                             </a>
                                             <span class="block2-price m-text6 p-r-5">
@@ -424,7 +423,7 @@
                                                 </div>
                                             </div>
                                             <div class="block2-txt p-t-20">
-                                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                <a href="{{ route('Products') }}" class="block2-name dis-block s-text3 p-b-5">
                                                     {{ $item->name }}
                                                 </a>
                                                 <span class="block2-oldprice m-text7 p-r-5">
@@ -460,7 +459,7 @@
                                                 </div>
                                             </div>
                                             <div class="block2-txt p-t-20">
-                                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                <a href="{{ route('Products') }}" class="block2-name dis-block s-text3 p-b-5">
                                                     {{ $item->name }}
                                                 </a>
                                                 <span class="block2-price m-text6 p-r-5">
@@ -493,7 +492,7 @@
                                                 </div>
                                             </div>
                                             <div class="block2-txt p-t-20">
-                                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                                <a href="{{ route('Products') }}" class="block2-name dis-block s-text3 p-b-5">
                                                     {{ $item->name }}
                                                 </a>
                                                 <span class="block2-price m-text6 p-r-5">
@@ -507,7 +506,6 @@
                         </div>
                     </section>
         <!-- End OUR PRODUCTS -->
-
 
         <!-- cart banner section -->
         <section class="cart-banner pt-100 pb-100">
@@ -587,6 +585,7 @@
                 </div>
 
                 <div class="row">
+                    
                     <div class="col-lg-4 col-md-6">
                         <div class="single-latest-news">
                             <a href="{{ route('news') }}">
@@ -720,7 +719,8 @@
             </div>
         </div>
 
-
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="{{ asset('assets/Products/vendor/jquery-1.12.4.min.js') }}"></script>
         <script src="{{ asset('assets/Products/vendor/modernizr-3.5.0.min.js') }}"></script>
         <script src="{{ asset('assets/Products/js/slick.min.js') }}"></script>

@@ -38,15 +38,15 @@ Route::get('/shop', function () {
 
 
 Route::get('/Products', function () {
+    
     $item = DB::table('_category')->get();
 
     return view('Products', ['_category' => $item]);
 })->name('Products');
 
 Route::get('/news', function () {
-    $latest = DB::table('news')->get();
 
-    return view('news', ['news' => $latest]);
+    return view('news');
 })->name('news');
 
 
@@ -69,6 +69,10 @@ Route::get('/cart', function () {
 Route::get('/latest', function () {
     return view('latestnews');
 })->name('latest');
+
+
+
+
 
 Auth::routes();
 

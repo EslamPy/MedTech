@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/vendor/bootstrap/css/bootstrap.min.css') }}">
     <!-- Icons Section -->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
     <!-- Animation Section -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/vendor/animsition/css/animsition.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/Products/vendor/slick/slick.css') }}">
@@ -208,7 +208,7 @@
                         <div class="col-md-6">
                             <div class="contact-us">
                                 <div class="contact-icon">
-                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                    <i class="fas fa-map-o" aria-hidden="true"></i>
                                 </div>
                                 <!-- End contact Icon -->
                                 <div class="contact-info">
@@ -223,7 +223,7 @@
                         <div class="col-md-6">
                             <div class="contact-us contact-us-last">
                                 <div class="contact-icon">
-                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                    <i class="fas fa-volume-control-phone" aria-hidden="true"></i>
                                 </div>
                                 <!-- End contact Icon -->
                                 <div class="contact-info">
