@@ -5,34 +5,11 @@
     <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Laravel E-Commerce Project by Sam">
         <!-- title -->
         <title>Cart</title>
 
         <!-- favicon -->
         <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-        <!-- google font -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-        <!-- fontawesome -->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <!-- owl carousel -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">
-        <!-- magnific popup -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!-- mean menu css -->
-        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-        <!-- main style -->
-        <link rel="stylesheet" href="assets/css/main.css">
-        <!-- responsive -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
 
     </head>
 
@@ -90,36 +67,26 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="table-body-row">
-                                        <td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a>
-                                        </td>
-                                        <td class="product-image"><img src="assets/img/products/product-img-1.jpg"
-                                                alt=""></td>
-                                        <td class="product-name">CPU</td>
-                                        <td class="product-price">$85</td>
-                                        <td class="product-quantity"><input type="number" placeholder="0"></td>
-                                        <td class="product-total">1</td>
-                                    </tr>
-                                    <tr class="table-body-row">
-                                        <td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a>
-                                        </td>
-                                        <td class="product-image"><img src="assets/img/products/product-img-2.jpg"
-                                                alt=""></td>
-                                        <td class="product-name">GPU</td>
-                                        <td class="product-price">$70</td>
-                                        <td class="product-quantity"><input type="number" placeholder="0"></td>
-                                        <td class="product-total">1</td>
-                                    </tr>
-                                    <tr class="table-body-row">
-                                        <td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a>
-                                        </td>
-                                        <td class="product-image"><img src="assets/img/products/product-img-3.jpg"
-                                                alt=""></td>
-                                        <td class="product-name">Ram</td>
-                                        <td class="product-price">$35</td>
-                                        <td class="product-quantity"><input type="number" placeholder="0"></td>
-                                        <td class="product-total">1</td>
-                                    </tr>
+                                    
+                                    @foreach ($cartItems as $item)
+                                        <tr class="table-body-row">
+                                            <!-- Delete a Product From the Cart -->
+                                            <td class="product-remove">
+                                                <a href="#" onclick="removeProduct({{ $item['id'] }})"><i class="far fa-window-close"></i></a>
+                                            </td>
+                                            <!-- Delete a Product From the Cart -->
+                                            <td class="product-image"><img src="{{ $item['image'] }}" alt=""></td>
+                                            <td class="product-name">{{ $item['name'] }}</td>
+                                            <td class="product-price">${{ $item['price'] }}</td>
+                                            <td class="product-quantity">
+                                                <input type="number" value="{{ $item['quantity'] }}" placeholder="1" class="quantityInput" data-price="{{ $item['price'] }}" data-item-id="{{ $item['id'] }}" min="1">
+                                            </td>
+                                            <td class="product-total" id="price-{{ $item['id'] }}">
+                                                ${{ $item['price'] * $item['quantity'] }}
+                                            </td>
+                                        </tr>
+                                    @endforeach
+
                                 </tbody>
                             </table>
                         </div>
@@ -137,31 +104,20 @@
                                 <tbody>
                                     <tr class="total-data">
                                         <td><strong>Subtotal: </strong></td>
-                                        <td>$500</td>
+                                        <td id="subtotal">${{ $subtotal }}</td>
                                     </tr>
                                     <tr class="total-data">
                                         <td><strong>Shipping: </strong></td>
-                                        <td>$45</td>
+                                        <td id="shipping">${{ $shipping }}</td>
                                     </tr>
                                     <tr class="total-data">
                                         <td><strong>Total: </strong></td>
-                                        <td>$545</td>
+                                        <td id="total">${{ $total }}</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <div class="cart-buttons">
-                                <a href="{{ route('cart') }}" class="boxed-btn">Update Cart</a>
                                 <a href="{{ route('checkout') }}" class="boxed-btn black">Check Out</a>
-                            </div>
-                        </div>
-
-                        <div class="coupon-section">
-                            <h3>Apply Coupon</h3>
-                            <div class="coupon-form-wrap">
-                                <form action="{{ route('welcome') }}">
-                                    <p><input type="text" placeholder="Coupon"></p>
-                                    <p><input type="submit" value="Apply"></p>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -170,6 +126,74 @@
         </div>
         <!-- end cart -->
 
+        <script>
+            // Function to update total price in the summary
+            function updateTotal() {
+                var subtotal = 0;
+                var priceElements = document.querySelectorAll('.product-total[id^="price-"]');
+                priceElements.forEach(function(priceElement) {
+                    subtotal += parseFloat(priceElement.innerText.replace('$', ''));
+                });
+                document.getElementById('subtotal').innerText = '$' + subtotal.toFixed(2);
 
-        <!-- end logo carousel -->
+                var shipping = parseFloat(document.getElementById('shipping').innerText.replace('$', ''));
+                document.getElementById('total').innerText = '$' + (subtotal + shipping).toFixed(2);
+            }
+
+            // Get all input elements with the class 'quantityInput'
+            var quantityInputs = document.querySelectorAll('.quantityInput');
+
+            // Loop through each input element
+            quantityInputs.forEach(function(input) {
+                // Add event listener to each input field
+                input.addEventListener('change', function() {
+                    // Parse the input value as a number
+                    var quantity = parseInt(this.value);
+
+                    // If the quantity is less than 1, set it to 1
+                    if (quantity < 1) {
+                        this.value = 1;
+                        quantity = 1;
+                    }
+
+                    // Get the original price from data attribute
+                    var price = parseFloat(this.getAttribute('data-price'));
+
+                    // Calculate the new price
+                    var newPrice = price * quantity;
+
+                    // Find the corresponding price element and update it
+                    var priceElement = document.getElementById('price-' + this.getAttribute('data-item-id'));
+                    priceElement.innerText = '$' + newPrice.toFixed(2);
+
+                    // Update the total price
+                    updateTotal();
+                });
+            });
+        </script>
+
+        <script>
+            // Remove product from cart
+            function removeProduct(productId) {
+                // Confirm with the user before removing the product
+                if (confirm("Are you sure you want to remove this product from your cart?")) {
+                    // Send AJAX request to remove the product
+                    $.ajax({
+                        url: '{{ route('cart.remove') }}',
+                        method: 'POST',
+                        data: {
+                            _token: '{{ csrf_token() }}',
+                            product_id: productId
+                        },
+                        success: function(response) {
+                            // If the product is successfully removed, reload the page to update the cart
+                            location.reload();
+                        },
+                        error: function(xhr, status, error) {
+                            console.error(error);
+                        }
+                    });
+                }
+            }
+        </script>
     @endsection

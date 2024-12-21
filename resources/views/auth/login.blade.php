@@ -1,54 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
-
-    <br>
-    <br>
-    <form method="POST" action="{{ route('login') }}" class="cont">
-        @csrf <!-- CSRF token -->
-    
-        <div class="form sign-in">
-            <h2>Welcome</h2>
-            <label>
-                <span>Email</span>
-                <input type="email" name="email" />
-            </label>
-            <label>
-                <span>Password</span>
-                <input type="password" name="password" />
-            </label>
-            <p class="forgot-pass">Forgot password?</p>
-            <button type="submit" class="submit">Sign In</button>
-        </div>
-    
-        <!-- Add the registration form here -->
-        <div class="form sign-up">
-            <h2>Create your Account</h2>
-            <label>
-                <span>Name</span>
-                <input type="text" name="name" />
-            </label>
-            <label>
-                <span>Email</span>
-                <input type="email" name="email" />
-            </label>
-            <label>
-                <span>Password</span>
-                <input type="password" name="password" />
-            </label>
-            <button type="submit" class="submit">Sign Up</button>
-        </div>
-    </form>
-
-
-
-</body>
-</html>
-
-
-
-
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

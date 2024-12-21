@@ -307,7 +307,7 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 12px 24px 12px 17px;
+  padding: 10px 24px 12px 17px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: 1px solid #007bff;
@@ -416,4 +416,35 @@ p {
   cursor: pointer;
   background: #FA6742;
   border-color: #FA6742;
+}
+
+
+
+/* ---------------------- */
+
+@media only screen and (max-width: 772px) {
+  .dk-footer .contact-us.contact-us-last {
+    margin-left: 0;
+  }
+
+    
+  .dk-footer .contact-us {
+    padding-left: 0;
+  }
+
+
+  .footer-left-widget {
+    padding-left: 0;
+  }
+
+  
+  .copyright-menu ul {
+    padding: 0;
+  }
+
+    
+  .copyright-menu li {
+    display: inline-block;
+    padding-right: 2px;
+  }
 }

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->decimal('price', 10, 2);
             $table->decimal('regular_price', 10, 2);
             $table->string('imgpath');
+            $table->string('category');
             $table->timestamps();
         });
     }

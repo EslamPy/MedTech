@@ -77,7 +77,7 @@ function getDynamicCountdownDate() {
     // Replace this with your code to fetch the dynamic date
     // For example, you can make an AJAX request to an API
     // and return the countdown date.
-    return "2023-12-31 23:59:59"; // Replace with your dynamic date
+    return "2024-9-31 23:59:59"; // Replace with your dynamic date
 }
 
 // Update the countdown using the dynamic date
